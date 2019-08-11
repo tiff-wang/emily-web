@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import './App.scss'
+import 'App.scss'
 
 // Components 
-import NavBar from './navbar'
-import Router from './Routes'
+import NavBar from 'navbar'
+import Router from 'Routes'
 
 class App extends Component {
 	render() {

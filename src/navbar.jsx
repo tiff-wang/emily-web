@@ -10,8 +10,8 @@ import {
     NavLink
 } from 'reactstrap';
 
-import './navbar.scss'
-import logo from './assets/logo.png'
+import 'navbar.scss'
+import logo from 'assets/logo.png'
 
 class NavBar extends Component {
     constructor(props) {

@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 // Pages
-import Philosophy from './pages/philosophy/Philosophy'
-import Menu from './pages/menu/Menu'
-import Shop from './pages/shop/Shop'
-import Contact from './pages/contact/Contact'
+import Philosophy from 'pages/philosophy/Philosophy'
+import Menu from 'pages/menu/Menu'
+import Shop from 'pages/shop/Shop'
+import Contact from 'pages/contact/Contact'
 
 class Router extends Component {
     render() {
