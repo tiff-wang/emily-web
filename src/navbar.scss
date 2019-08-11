@@ -1,0 +1,24 @@
+@import "/variable.scss";
+
+.navbar-brand {
+	padding: 0;
+	padding-bottom: 5px;
+	max-height: 100%;
+}
+
+img#navbar-logo {
+	margin-left: 20px;
+	max-height: 30px;
+}
+
+.navbar .navbar-nav {
+	padding: 15px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	font-family: 'EXO';
+	text-transform: uppercase;
+	color: $font-title-color;
+	padding-bottom: 0;
+	margin: 0 20px;
+}

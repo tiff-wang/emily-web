@@ -3,12 +3,14 @@ import './App.scss'
 
 // Components 
 import NavBar from './navbar'
+import Router from './Routes'
 
 class App extends Component {
-	render(){
+	render() {
         return (
             <div className="App parallax-background"> 
 				<NavBar/>
+                <Router/>
             </div>
         )
 	}

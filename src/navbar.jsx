@@ -1,38 +1,61 @@
-import React, { Component } from 'react';
-import './navbar.scss';
+import React, { Component} from 'react'
+import { Link } from 'react-router-dom'
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink
+} from 'reactstrap';
 
-// Router
-import { Switch, Route, Link } from 'react-router-dom'
-
-// Pages
-import Philosophy from './pages/philosophy/Philosophy'
-import Menu from './pages/menu/Menu'
-import Shop from './pages/shop/Shop'
-import Contact from './pages/contact/Contact'
+import './navbar.scss'
+import logo from './assets/logo.png'
 
 class NavBar extends Component {
+    constructor(props) {
+        super(props);
+
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            isOpen: false,
+            navCollapsed: true,
+            showNavbar: false
+        }
+    }
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        })
+    }
     render() {
         return (
             <div>
-                <nav className="navbar">
-                    <ul className="navbar-nav mr-auto">
-                        <li><Link to={'/'} className="nav-link"> Philosophy </Link></li>
-                        <li><Link to={'/menu'} className="nav-link">Menu</Link></li>
-                        <li><Link to={'/shop'} className="nav-link">Shop</Link></li>
-                        <li><Link to={'/contact'} className="nav-link">Contact</Link></li>
-                    </ul>
-                </nav>
-                <hr />
-                <Switch>
-                    <Route exact path='/' component={Philosophy} />
-                    <Route path='/menu' component={Menu} />
-                    <Route path='/shop' component={Shop} />
-                    <Route path='/contact' component={Contact} />
-                </Switch>
+                <Navbar color="light" light expand="md">
+                    <NavbarBrand href="/">
+                        <img id="navbar-logo" src={logo} alt='White Heron'/>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={this.toggle} />
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav className="mr-auto" navbar>
+                            <NavItem>
+                                <NavLink tag={Link} to="/">Philosophy</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to="/menu">Menu</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to="/shop">Shop</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to="/contact">Contact</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
             </div>
-        );
+        )
     }
 }
-
-
-export default NavBar;
+export default NavBar
