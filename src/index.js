@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
 
 import App from './App'
 import './index.scss'
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render((
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+), document.getElementById('app'))
 
-serviceWorker.unregister()
+serviceWorker.register()
