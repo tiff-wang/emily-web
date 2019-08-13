@@ -13,7 +13,7 @@ import './index.scss'
 
 WebFont.load({
     google: {
-        families: ['Exo']
+        families: ['Exo', 'Montserrat:300']
     }
 });
 

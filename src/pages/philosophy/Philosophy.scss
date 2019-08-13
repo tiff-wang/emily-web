@@ -1,0 +1,28 @@
+@import '../../variable.scss';
+
+.Philosophy {
+    height: calc(100vh - 78px);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Philosophy .container-v {
+    align-content: center;
+    justify-content: center;
+}
+
+.Philosophy .container-v #landing-logo {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    filter: invert(1.0);
+}
+
+.Philosophy .container-v #landing-title {
+    margin: 15px;
+    color: white;
+    text-align: center;
+    font-family: $font-body;
+    font-size: 2.5em;
+}

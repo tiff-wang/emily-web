@@ -1,6 +1,9 @@
+@import '/variable.scss';
+
 body {
 	margin: 0px;
-	padding: 0px;
+  padding: 0px;
+  font-family: $font-body;
 }
 
 ul {
@@ -27,4 +30,15 @@ ul {
     background-size: cover;
     background-attachment: scroll;
   }
+}
+
+// FLEX CONTAINER 
+.container-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-h {
+  display: flex;
+  flex-direction: row;
 }
