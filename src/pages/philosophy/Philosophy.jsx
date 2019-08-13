@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Text } from 'reactstrap';
+import { Row, Col} from 'reactstrap';
 
 import library from 'library'
 import side_img from 'assets/images/philosophy-side-img.png'
