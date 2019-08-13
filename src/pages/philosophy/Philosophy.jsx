@@ -9,25 +9,25 @@ import 'pages/philosophy/Philosophy.scss'
 class Philosophy extends Component {
     render() {
         return (
-            <div class='Philosophy'>
+            <div className='Philosophy'>
                 {/* LANDING PAGE */}
-                <div class='landing-page container-h'>
-                    <div class='container-v'>
+                <div className='landing-page container-h'>
+                    <div className='container-v'>
                         <img id='landing-logo' src={logo}/>
                         <h2 id='landing-title'> White Heron Cafe</h2>
                     </div>
                 </div>
 
                 {/* STORE STORY */}
-                <div class='story'>
+                <div className='story'>
                     <Row>
                         <Col sm='12' md='4'>
-                            <div class="sidebar-img">
+                            <div className="sidebar-img">
                                 <img src={ side_img }/>
                             </div>
                         </Col>
                         <Col md='8'>
-                            <p class="paragraph">{ library.Philosophy }</p>
+                            <p className="paragraph">{ library.Philosophy }</p>
                         </Col>
                     </Row>
                 </div>
