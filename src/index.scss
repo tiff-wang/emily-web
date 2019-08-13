@@ -33,6 +33,13 @@ ul {
 }
 
 // FLEX CONTAINER 
+.center { 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
 .container-v {
   display: flex;
   flex-direction: column;
