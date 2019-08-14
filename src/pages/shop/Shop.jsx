@@ -1,70 +1,31 @@
 import React, { Component } from 'react'
-import { Row, Col, Container} from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
+import Card from 'components/Card'
 
 import 'pages/shop/Shop.scss'
 import placeholder from 'assets/images/shop-placeholder.jpg'
 
 class Shop extends Component {
+
+    createShopList = () => {
+        let list = []
+
+        for (let i = 0; i < 6; i++) {
+            list.push(<Col md='4'>
+                <Card img={placeholder}
+                    name='Item Name'
+                    description='$0.00' /></Col>)
+        }
+        return list
+    }
+
+
     render() {
         return (
             <div className='Shop'>
                 <Container>
                     <Row>
-                        <Col md='4'>
-                            <div className='card'>
-                                <a>
-                                    <div className='card-image'>
-                                        <img src={placeholder}/>
-                                    </div>
-                                    <div className='card-description'>
-                                        <p> Item name </p>
-                                        <p> $0.00 </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </Col>
-
-                        <Col md='4'>
-                            <div className='card'>
-                                <a>
-                                    <div className='card-image'>
-                                        <img src={placeholder}/>
-                                    </div>
-                                    <div className='card-description'>
-                                        <p> Item name </p>
-                                        <p> $0.00 </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </Col>
-
-                        <Col md='4'>
-                            <div className='card'>
-                                <a>
-                                    <div className='card-image'>
-                                        <img src={placeholder}/>
-                                    </div>
-                                    <div className='card-description'>
-                                        <p> Item name </p>
-                                        <p> $0.00 </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </Col>
-
-                        <Col md='4'>
-                            <div className='card'>
-                                <a>
-                                    <div className='card-image'>
-                                        <img src={placeholder}/>
-                                    </div>
-                                    <div className='card-description'>
-                                        <p> Item name </p>
-                                        <p> $0.00 </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </Col>
+                        { this.createShopList() }
                     </Row>
                 </Container>
             </div>

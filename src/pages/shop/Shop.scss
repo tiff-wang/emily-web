@@ -2,34 +2,11 @@
 
 .Shop {
     transform: translateY($navbar-height);
+    min-height: calc(100vh - #{$navbar-height});
     background-color: $background-default;
     padding: 2em 5em;
 }
 
 .Shop .card {
-    border: none;
     margin: 1em;
 }
-
-.Shop .card .card-image img {
-    width: 100%;
-    height: auto;
-}
-
-.Shop .card .card-description p {
-    text-align: center;
-    margin: 0;
-    font-weight: bolder;
-    color: $font-link;
-}
-
-.Shop .card a:hover {
-    p {
-        color: $font-link-hover;
-    }
-
-    img {
-        opacity: 0.8;
-    }
-}
-
