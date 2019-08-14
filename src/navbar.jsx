@@ -40,16 +40,16 @@ class NavBar extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink tag={Link} to="/">Philosophy</NavLink>
+                                <NavLink tag={Link} onClick={this.toggle} to="/">Philosophy</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/menu">Menu</NavLink>
+                                <NavLink tag={Link} onClick={this.toggle} to="/menu">Menu</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/shop">Shop</NavLink>
+                                <NavLink tag={Link} onClick={this.toggle} to="/shop">Shop</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/contact">Contact</NavLink>
+                                <NavLink tag={Link} onClick={this.toggle} to="/contact">Contact</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
