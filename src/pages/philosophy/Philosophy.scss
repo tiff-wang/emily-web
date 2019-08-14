@@ -1,0 +1,67 @@
+@import '../../variable.scss';
+
+// LANDING PAGE
+
+.Philosophy {
+    height: 100%;
+}
+
+.Philosophy .landing-page {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Philosophy .landing-page .container-v {
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.Philosophy .landing-page #landing-logo {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    filter: invert(1.0);
+}
+
+.Philosophy .landing-page #landing-title {
+    margin: 15px;
+    color: white;
+    text-align: center;
+    font-family: $font-body;
+    font-size: 2.5em;
+}
+
+// STORE STORY
+.Philosophy .story {
+    background-color: $background-default;
+    padding: 3em;
+}
+
+.Philosophy .sidebar-img {
+    margin: 1em;
+    width: 100%;
+}
+
+.Philosophy .sidebar-img img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .Philosophy .sidebar-img {
+        max-height: 150px;
+        overflow: hidden;
+    }
+
+    .Philosophy .sidebar-img img {
+        width: 100%;
+    }
+}
+
+.Philosophy .paragraph {
+    margin: 1em;
+    font-size: $font-body-size;
+    overflow: scroll;
+}

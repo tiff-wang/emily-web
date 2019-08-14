@@ -1,0 +1,24 @@
+@import 'variable.scss';
+
+.Card .card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.Card .card-description p {
+    text-align: center;
+    margin: 0;
+    font-weight: bolder;
+    color: $font-link;
+}
+
+.Card a:hover {
+    p {
+        color: $font-link-hover;
+    }
+
+    img {
+        opacity: 0.8;
+    }
+}
+

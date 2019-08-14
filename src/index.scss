@@ -1,0 +1,56 @@
+@import '/variable.scss';
+
+body {
+	margin: 0px;
+  padding: 0px;
+  font-family: $font-body;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+// BACKGROUND
+.parallax-background {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .parallax-background {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+// FLEX CONTAINER 
+.center { 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+.container-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-h {
+  display: flex;
+  flex-direction: row;
+}
+
+// TEXTS
+.paragraph { 
+  white-space: pre-wrap;
+}

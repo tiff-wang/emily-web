@@ -1,0 +1,15 @@
+@import 'variable.scss';
+
+.Menu {
+    background-color: $background-default;
+    height: 100vh;
+    padding: 8em;
+}
+
+.Menu .menu-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #BBB;
+    text-align: center;
+}
+

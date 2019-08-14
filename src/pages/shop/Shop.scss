@@ -1,0 +1,12 @@
+@import 'variable.scss';
+
+.Shop {
+    transform: translateY($navbar-height);
+    min-height: calc(100vh - #{$navbar-height});
+    background-color: $background-default;
+    padding: 2em 5em;
+}
+
+.Shop .card {
+    margin: 1em;
+}

@@ -1,0 +1,30 @@
+@import '/variable.scss';
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	width: 100%;
+}
+
+.navbar-brand {
+	padding: 0;
+	max-height: 100%;
+}
+
+img#navbar-logo {
+	margin-left: 20px;
+	max-height: 30px;
+}
+
+.navbar .navbar-nav {
+	padding: 0.1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	font-family: $font-title;
+	text-transform: uppercase;
+	color: $font-title-color;
+	padding-bottom: 0;
+	margin: 0 20px;
+}
