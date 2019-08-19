@@ -11,7 +11,7 @@ class Philosophy extends Component {
         return (
             <div className='Philosophy'>
                 {/* LANDING PAGE */}
-                <div className='landing-page container-h'>
+                <div className='landing-page parallax-background container-h'>
                     <div className='container-v'>
                         <img id='landing-logo' src={logo}/>
                         <h2 id='landing-title'> White Heron Cafe</h2>

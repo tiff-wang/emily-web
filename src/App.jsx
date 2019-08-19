@@ -8,7 +8,7 @@ import Router from 'Routes'
 class App extends Component {
 	render() {
         return (
-            <div className="App parallax-background"> 
+            <div className="App"> 
 				<NavBar/>
                 <Router/>
             </div>
