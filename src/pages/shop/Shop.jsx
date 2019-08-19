@@ -11,7 +11,7 @@ class Shop extends Component {
         let list = []
 
         for (let i = 0; i < 6; i++) {
-            list.push(<Col md='4'>
+            list.push(<Col xs='6' md='3'>
                 <Card img={placeholder}
                     name='Item Name'
                     description='$0.00' /></Col>)
