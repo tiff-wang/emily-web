@@ -49,19 +49,20 @@
     width: 100%;
 }
 
+.Philosophy .story .paragraph {
+    font-size: 1.2vmax;
+    margin: 1em;
+    overflow: scroll;
+}
+
+
 @media (max-width: 768px) {
     .Philosophy .sidebar-img {
         max-height: 150px;
         overflow: hidden;
     }
 
-    .Philosophy .sidebar-img img {
-        width: 100%;
+    .Philosophy .story .paragraph {
+        font-size: $font-body-size;
     }
-}
-
-.Philosophy .paragraph {
-    margin: 1em;
-    font-size: $font-body-size;
-    overflow: scroll;
 }
