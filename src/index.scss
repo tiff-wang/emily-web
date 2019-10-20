@@ -54,3 +54,11 @@ ul {
 .paragraph { 
   white-space: pre-wrap;
 }
+
+// PAGES 
+.page {
+  min-height: calc(100vh - #{$navbar-height});
+  margin-top: $navbar-height;
+  background-color: $background-default;
+  padding: 2em 5em;  
+}

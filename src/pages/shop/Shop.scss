@@ -1,11 +1,3 @@
-@import 'variable.scss';
-
-.Shop {
-    min-height: calc(100vh - #{$navbar-height});
-    background-color: $background-default;
-    padding: 4em 5em 2em 5em;
-}
-
 .Shop .card {
     margin: 1em;
 }

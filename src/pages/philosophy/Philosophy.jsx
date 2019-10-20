@@ -14,7 +14,6 @@ class Philosophy extends Component {
                 <div className='landing-page parallax-background container-h'>
                     <div className='container-v'>
                         <img id='landing-logo' src={logo}/>
-                        <h2 id='landing-title'> White Heron Cafe</h2>
                     </div>
                 </div>
 

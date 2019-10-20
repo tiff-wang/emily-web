@@ -3,3 +3,18 @@
 	height: 100vh;
 	width: 100%;
 }
+
+.button-general {
+	background: transparent;
+	border: transparent;
+	outline: none;
+	padding: 15px;
+	
+	&:hover {
+		background-color: #eee;
+	}
+
+	&:active {
+		background-color: #aaa;
+	}
+}
